@@ -1,0 +1,38 @@
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+source ~/.vimrc
+
+
+" Keymaps ----------
+
+" Searching
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fg <Action>(FindInPath)
+
+" Tag Navigation
+nmap <S-h> <Action>(PreviousTab)
+nmap <S-l> <Action>(NextTab)
+
+" Version Control
+nmap <leader>hp <Action>(VcsShowCurrentChangeMarker)
+nmap <leader>hn <Action>(VcsShowNextChangeMarker)
+nmap <leader>hN <Action>(VcsShowPrevChangeMarker)
+nmap <leader>hr <Action>(Vcs.RollbackChangedLines)
+nmap <leader>hb <Action>(Annotate)
+
+" Info
+nmap <S-k> <Action>(QuickJavaDoc)
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gr <Action>(ShowUsages)
+nmap <leader>gt <Action>(GotoTypeDeclaration)
+
+" Testing
+nmap <leader>r <Action>(RunClass)
+
+
+" Plugins -----------------
+
+" Which Key
+set which-key
+set notimeout
+set timeoutlen=5000
