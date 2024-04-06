@@ -27,7 +27,10 @@ nmap <leader>gr <Action>(ShowUsages)
 nmap <leader>gt <Action>(GotoTypeDeclaration)
 
 " Testing
-nmap <leader>r <Action>(RunClass)
+nmap <leader>t <Action>(RunClass)
+
+" Reformatting
+nmap <leader>r <Action>(ReformatCode)
 
 
 " Plugins -----------------
