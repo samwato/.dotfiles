@@ -67,3 +67,16 @@ nnoremap <leader>+ <C-x>
 vnoremap <leader>+ <C-x>
 nnoremap <leader>- <C-a>
 vnoremap <leader>- <C-a>
+
+
+" Plugins ---------------------
+call plug#begin()
+
+Plug 'rose-pine/vim'
+
+call plug#end()
+
+
+" Theme ----------------------
+set background=dark
+colorscheme rosepine_moon
