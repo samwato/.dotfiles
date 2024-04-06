@@ -9,10 +9,6 @@ source ~/.vimrc
 nmap <leader>ff <Action>(GotoFile)
 nmap <leader>fg <Action>(FindInPath)
 
-" Tag Navigation
-nmap <S-h> <Action>(PreviousTab)
-nmap <S-l> <Action>(NextTab)
-
 " Version Control
 nmap <leader>hp <Action>(VcsShowCurrentChangeMarker)
 nmap <leader>hn <Action>(VcsShowNextChangeMarker)
