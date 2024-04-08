@@ -25,8 +25,9 @@ nmap <leader>gt <Action>(GotoTypeDeclaration)
 " Testing
 nmap <leader>t <Action>(RunClass)
 
-" Reformatting
-nmap <leader>r <Action>(ReformatCode)
+" Refactor
+nmap <leader>rf <Action>(ReformatCode)
+nmap <leader>rr <Action>(RenameElement)
 
 
 " Plugins -----------------
