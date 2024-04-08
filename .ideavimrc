@@ -30,8 +30,9 @@ nmap <leader>gt <Action>(GotoTypeDeclaration)
 nmap <leader>t <Action>(RunClass)
 
 " Refactor
-nmap <leader>rf <Action>(ReformatCode)
+nmap <leader>rR <Action>(ReformatCode)
 nmap <leader>rr <Action>(RenameElement)
+nmap <leader>rf <Action>(ShowIntentionActions)
 
 
 " Plugins -----------------
