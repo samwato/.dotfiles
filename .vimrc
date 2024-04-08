@@ -8,11 +8,18 @@ set nocompatible
 set expandtab
 set tabstop=2
 set softtabstop=2
+
 set shiftwidth=2
 set smartindent
 
 set incsearch
-set nohlsearch
+
+" Toggle hightlight search
+augroup vimrc-incsearch-highlight
+  autocmd!
+  autocmd CmdlineEnter /,\? :set hlsearch
+  autocmd CmdlineLeave /,\? :set nohlsearch
+augroup END
 
 set history=1000
 set noswapfile
