@@ -8,6 +8,7 @@ source ~/.vimrc
 " Searching
 nmap <leader>ff <Action>(GotoFile)
 nmap <leader>fg <Action>(FindInPath)
+nmap <leader>fe <Action>(SelectInProjectView)
 
 " Tab Navigation
 nmap <S-h> <Action>(PreviousTab)

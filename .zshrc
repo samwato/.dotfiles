@@ -1,4 +1,4 @@
-export PATH="$PATH:/Users/samwato/bin/"
+export PATH="$PATH:/$HOME/bin/"
 
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
@@ -17,7 +17,7 @@ export GOROOT="$(brew --prefix golang)/libexec"
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 # bun completions
-[ -s "/Users/samwato/.bun/_bun" ] && source "/Users/samwato/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -25,3 +25,20 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # fzf
 eval "$(fzf --zsh)"
+
+# pnpm
+alias pn=pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+# Karma
+export CHROME_BIN="$HOME/bin/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+
+# Serve
+alias serve=$HOME/dev/projects/serve/serve
+
+# ls
+alias ls="ls -a --color=auto"

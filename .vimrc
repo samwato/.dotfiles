@@ -8,7 +8,6 @@ set nocompatible
 set expandtab
 set tabstop=2
 set softtabstop=2
-
 set shiftwidth=2
 set smartindent
 
@@ -28,6 +27,7 @@ set number
 set relativenumber
 
 set termguicolors
+set cursorline
 
 set splitright
 set splitbelow
@@ -72,20 +72,17 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-\> <C-w>v
 
 " Numbers
-nnoremap <leader>+ <C-x>
-vnoremap <leader>+ <C-x>
-nnoremap <leader>- <C-a>
-vnoremap <leader>- <C-a>
+nnoremap <leader>+ <C-a>
+vnoremap <leader>+ <C-a>
+nnoremap <leader>- <C-x>
+vnoremap <leader>- <C-x>
 
 
 " Plugins ---------------------
 call plug#begin()
 
-Plug 'rose-pine/vim'
-
 call plug#end()
 
 
 " Theme ----------------------
-set background=dark
-colorscheme rosepine_moon
+source ~/.dotfiles/jetbrains_dark.vim
