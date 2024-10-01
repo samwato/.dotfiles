@@ -71,17 +71,37 @@ nnoremap <C-h> <C-w>h
 " Window splits
 nnoremap <C-\> <C-w>v
 
-" Numbers
+" Increment and Decrement Numbers
 nnoremap <leader>+ <C-a>
 vnoremap <leader>+ <C-a>
 nnoremap <leader>- <C-x>
 vnoremap <leader>- <C-x>
 
+" Toggle Case
+nnoremap <leader>u v~
+vnoremap <leader>u ~
+
 
 " Plugins ---------------------
 call plug#begin()
 
+Plug 'liuchengxu/vim-which-key'
+
 call plug#end()
+
+" Which Key --
+let g:which_key_map = {
+      \ 's' : 'Substitute word',
+      \ 'u' : 'Toggle case',
+      \ 'y' : 'Copy to clipboard',
+      \ '+' : 'Increment number',
+      \ '-' : 'Decrement number',
+      \ }
+
+nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
+
+call which_key#register('<Space>', "g:which_key_map")
 
 
 " Theme ----------------------
