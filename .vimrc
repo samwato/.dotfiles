@@ -86,6 +86,7 @@ vnoremap <leader>u ~
 call plug#begin()
 
 Plug 'liuchengxu/vim-which-key'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
