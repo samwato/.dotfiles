@@ -1,0 +1,6 @@
+background = 1e1f22
+
+keybind = ctrl+\=new_split:right
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+l=goto_split:right
+

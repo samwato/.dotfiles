@@ -39,6 +39,8 @@ set mouse=a
 
 set backspace=indent,eol,start
 
+set clipboard=unnamed
+
 syntax on
 
 
@@ -86,7 +88,7 @@ vnoremap <leader>u ~
 call plug#begin()
 
 Plug 'liuchengxu/vim-which-key'
-Plug 'github/copilot.vim'
+"Plug 'github/copilot.vim'
 
 call plug#end()
 

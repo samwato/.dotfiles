@@ -1,9 +1,17 @@
-export PATH="$PATH:/$HOME/bin/"
+export PATH="$PATH:/$HOME/bin/:$HOME/.local/bin/"
 
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
+
+# theme
 ZSH_THEME="robbyrussell"
-plugins=(git zsh-syntax-highlighting)
+
+# plugins
+plugins=(
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
+
 source $ZSH/oh-my-zsh.sh
 
 # nvm
@@ -34,11 +42,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# Karma
-export CHROME_BIN="$HOME/bin/chrome-headless-shell-mac-arm64/chrome-headless-shell"
-
-# Serve
-alias serve=$HOME/dev/projects/serve/serve
-
-# ls
-alias ls="ls -a --color=auto"
+# Deno
+. "$HOME/.deno/env"
