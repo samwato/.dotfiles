@@ -1,7 +1,10 @@
 #!/bin/zsh
 
-ln -sf "$(pwd)/ideavimrc" "$HOME/.ideavimrc"
-ln -sf "$(pwd)/vimrc" "$HOME/.vimrc"
-ln -sf "$(pwd)/zshrc" "$HOME/.zshrc"
-ln -sf "$(pwd)/yabairc" "$HOME/.config/yabai/yabairc"
-ln -sf "$(pwd)/ghosttyrc" "$HOME/.config/ghostty/config"
+dirname=$(pwd)
+
+ln -sf "${dirname}/ideavimrc" "$HOME/.ideavimrc"
+ln -sf "${dirname}/vimrc" "$HOME/.vimrc"
+ln -sf "${dirname}/zshrc" "$HOME/.zshrc"
+ln -sf "${dirname}/yabairc" "$HOME/.config/yabai/yabairc"
+ln -sf "${dirname}/ghosttyrc" "$HOME/.config/ghostty/config"
+ln -sf "${dirname}/aerospace.toml" "$HOME/.aerospace.toml"
