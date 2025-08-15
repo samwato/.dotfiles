@@ -44,3 +44,4 @@ esac
 
 # Deno
 . "$HOME/.deno/env"
+
