@@ -45,3 +45,6 @@ esac
 # Deno
 . "$HOME/.deno/env"
 
+# Neovim
+alias vi=nvim
+
