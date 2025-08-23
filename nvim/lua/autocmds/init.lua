@@ -1,0 +1,2 @@
+-- [[ Basic Autocommands ]].
+-- See `:h lua-guide-autocommands`, `:h autocmd`, `:h nvim_create_autocmd()`

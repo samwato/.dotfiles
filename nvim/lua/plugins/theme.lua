@@ -1,10 +1,10 @@
 return {
-  {
-    dir = "/Users/samwato/.dotfiles",
-    name = "jetbrains-dark",
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
     priority = 1000,
+    opts = {},
     config = function()
-      vim.cmd("source ~/.dotfiles/jetbrains_dark.vim")
+        vim.cmd("colorscheme catppuccin")
     end,
-  }
 }

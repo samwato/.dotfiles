@@ -1,9 +1,11 @@
 return {
-  {
-    'neovim/nvim-lspconfig',
-    dependencies = {
-      'williamboman/mason.nvim',
-      'williamboman/mason-lspconfig.nvim',
-    },
+  "neovim/nvim-lspconfig",
+  opts = { },
+  keys = {
+    { "K", vim.lsp.buf.hover, { silent = true } },
   },
+  config = function()
+    vim.lsp.enable("tsgo")
+  end,
 }
+
