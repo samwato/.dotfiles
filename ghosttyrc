@@ -1,6 +1,7 @@
 background = 1e1f22
 
 keybind = ctrl+\=new_split:right
+keybind = ctrl+/=new_split:down
 keybind = ctrl+h=goto_split:left
 keybind = ctrl+j=goto_split:down
 keybind = ctrl+k=goto_split:up
