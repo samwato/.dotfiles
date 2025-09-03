@@ -6,9 +6,9 @@ source ~/.vimrc
 " Keymaps ----------
 
 " Searching
-nmap <leader>ff <Action>(GotoFile)
-nmap <leader>fg <Action>(FindInPath)
-nmap <leader>fe <Action>(SelectInProjectView)
+nmap <leader>p <Action>(GotoFile)
+nmap <leader>f <Action>(FindInPath)
+nmap <leader>e <Action>(SelectInProjectView)
 
 " Tab Navigation
 nmap <S-h> <Action>(PreviousTab)
