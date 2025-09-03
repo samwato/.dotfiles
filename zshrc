@@ -48,3 +48,5 @@ esac
 # Neovim
 alias vi=nvim
 
+# Git Commands
+export PATH="$PATH:/$HOME/.dotfiles/git-commands"
