@@ -43,7 +43,8 @@ fi
 
 # Install packages
 if (( do_packages )); then
-  brew install neovim
+  brew tap neovim/neovim
+  brew install -HEAD neovim # nightly
   brew install ripgrep
   brew install fd
 fi

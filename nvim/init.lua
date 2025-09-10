@@ -58,6 +58,15 @@ vim.pack.add({
 require 'mason'.setup()
 vim.lsp.enable({ 'lua_ls', 'ts_ls' })
 
+-- Fzf-lua
+require('fzf-lua').setup{
+  winopts = {
+    preview = {
+      layout = 'vertical'
+    }
+  }
+}
+
 -- TODO THIS DOESN"T WORK WELL
 -- Auto completion
 -- vim.api.nvim_create_autocmd("LspAttach", {
