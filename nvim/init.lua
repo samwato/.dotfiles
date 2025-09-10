@@ -26,6 +26,7 @@ vim.o.updatetime = 300
 vim.o.timeoutlen = 500
 vim.o.signcolumn = 'yes'
 
+
 -- Keymaps
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")                                        -- Move lines down
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")                                        -- Move lines up
@@ -35,14 +36,20 @@ vim.keymap.set('v', '<leader>y', '"+y')                                         
 vim.keymap.set('n', '<leader>s', 'yiw:%s/\\<<C-r>"\\>/<C-r>"/gI<Left><Left><Left>') -- Substitute word
 vim.keymap.set('n', '<leader>u', 'v~')                                              -- Toggle Case (Normal)
 vim.keymap.set('v', '<leader>u', '~')                                               -- Toggle Case (Visual)
-
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')                         -- Source file
 vim.keymap.set('n', '<leader>w', ':write<CR>')                                      -- Write
 vim.keymap.set('n', '<leader>q', ':quit<CR>')                                       -- Quit
 vim.keymap.set('n', '<leader>l', vim.lsp.buf.format)                                -- Format
+
 vim.keymap.set('n', '<leader>p', ':FzfLua files resume=true<CR>')                   -- Find files
 vim.keymap.set('n', '<leader>f', ':FzfLua grep resume=true<CR>')                    -- Search files
 vim.keymap.set('n', '<leader>b', ':FzfLua git_branches resume=true<CR>')            -- Find Git Branch
+vim.keymap.set('n', '<leader>hn', ':Gitsigns next_hunk<CR>')                        -- Git next hunk
+vim.keymap.set('n', '<leader>hN', ':Gitsigns prev_hunk<CR>')                        -- Git previous hunk
+vim.keymap.set('n', '<leader>hp', ':Gitsigns preview_hunk<CR>')                     -- Git preview hunk
+vim.keymap.set('n', '<leader>hb', ':Gitsigns blame<CR>')                            -- Git blame
+vim.keymap.set('n', '<leader>hd', ':Gitsigns diffthis<CR>')                         -- Git diff preview
+vim.keymap.set('n', '<leader>hr', ':Gitsigns reset_hunk<CR>')                       -- Git rollback hunk
 
 
 -- Plugins
@@ -52,6 +59,8 @@ vim.pack.add({
   { src = 'https://github.com/mason-org/mason.nvim' },
   { src = 'https://github.com/ibhagwan/fzf-lua' },
   { src = 'https://github.com/nvim-tree/nvim-web-devicons' },
+  { src = 'https://github.com/lewis6991/gitsigns.nvim' },
+  { src = 'https://github.com/norcalli/nvim-colorizer.lua' },
 })
 
 -- LSP
