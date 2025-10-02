@@ -1,0 +1,15 @@
+{
+  "icon_theme": "JetBrains New UI Icons (Dark)",
+  "context_servers": {},
+  "agent": {
+    "play_sound_when_agent_done": true
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Kanagawa Wave - No Italics"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "context": "!ContextEditor > (Editor && mode == full)",
+    "bindings": {
+      "cmd-e": "pane::RevealInProjectPanel"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "shift-l": "pane::ActivateNextItem"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "shift-h": "pane::ActivatePreviousItem"
+    }
+  }
+]
